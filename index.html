@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Light Bulb</title>
+       <style>
+              body {
+                     font-family: Arial, Helvetica, sans-serif;
+                     text-align: center;
+                     margin-top: 50px;
+                     background-color: whitesmoke;
+              }
+              .bulb {
+                     width: 150px;
+                     height: 150px;
+              }
+              .button-container {
+                     display: flex;
+                     gap: 10px;
+                     margin-top: 20px;
+                     justify-content: center;
+              }
+              button {
+                     padding: 10px 20px;
+                     font-size: 16px;
+                     cursor: pointer;
+              }
+              .on-btn {
+                     background-color: #008000;
+                     border-radius: 5px;
+                     margin: 2px solid black;
+              }
+              .off-btn {
+                     background-color: #ff0000;
+                     border-radius: 5px;
+                     margin: 2px solid black;
+              }
+       </style>
+</head>
+<body>
+       <h1>Bulb Switch</h1>
+       <img src="asset/VectorOff.png" alt="bulb"  id="bulbImage" class="bulb">
+       <div class="button-container">
+              <button onclick="turnON()" class="on-btn">ON</button>
+              <button onclick="turnOff()" class="off-btn">OFF</button>
+       </div>
+       <script>
+              function turnON() {
+                     document.getElementById("bulbImage").src ='asset/VectorOn.png';
+              }
+              function turnOff() {
+                     document.getElementById("bulbImage").src ='asset/VectorOff.png';
+              }
+       </script>
+</body>
+</html>
